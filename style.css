@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(222, 83%, 5%);
+    color: #fff;
+}
+
+.container {
+    background: hsl(221, 26%, 12%);
+    display: flex;
+    width: 800px;
+    height: 300px;
+    border-radius: .5em;
+}
+
+.left, .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 1.1em 3em;
+    font-family: "Red Hat Display";
+    gap: 10px;
+}
+
+.left .insight {
+    color: hsl(220, 23%, 97%);
+    font-size: 1.8em;
+    font-weight: 900;
+    padding-top: 1.3em;
+}
+
+.left .i {
+    color: hsl(224, 23%, 55%);
+}
+
+.left .p {
+    font-size: .85em;
+    font-weight: 500;
+    color: hsla(227, 17%, 90%, 0.87);
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.left .left-foot {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 2em;
+    
+}
+
+.left-foot .com {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: hsl(220, 23%, 97%);
+}
+
+.left-foot .co {
+    color: hsla(227, 17%, 90%, 0.87);
+    font-size: .3em;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.container .right {
+    width: 50%;
+    position: relative;
+}
+
+
+.right .desk {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+      
+}
+
+.right .class {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(224, 23%, 55%); 
+    opacity: .5;
+    transition: .4s ease;
+
+}
+
+.right .mobile {
+    display: none;
+}
+/* 
+@media screen and (max-width:650px) {
+    .container {
+        width: 54%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.8em;
+        margin-bottom: .2em;
+    }
+
+    .left, .right {
+        display: flex;
+        width: 54%;
+    }
+
+    .right {
+        width: 100%;
+    }
+    
+    .right .desk {
+        display: none;
+        
+    }
+    
+    .right .mobile {
+        display: flex;
+        width: auto;
+        height: auto;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        
+    }
+    
+} */
